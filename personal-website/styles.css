@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: "Pixelify Sans",sans-serif;
+    background-color: #F5EFE6;
+    color: black;
+    line-height: 1.6;
+}
+
+header {
+    background: #F6F4EF;
+    color: #4A403A;
+    text-align: center;
+    padding: 30px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+h1,h2{
+    font-size: 50px;
+    font-family: "Pixelify Sans",sans-serif;
+    color: #4A403A;
+    margin-bottom: 20px;
+}
+header p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a{
+    color: saddlebrown;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    color: #55705D;
+}
+
+#about {
+    /*display: flex;
+    justify-content: center;*/
+
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    gap: 60px;
+
+    background: cornsilk;
+    border-radius: 10px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.profile {
+    width: 170px;
+    height: 170px;
+    border-radius: 25%;
+    border: 4px solid rgb(217, 215, 159);
+    object-fit: cover;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+#projects {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.project {
+    background: #C3B39A;
+    border: 2px solid beige;
+    /*display: flex;
+    justify-content: space-between;*/
+    align-items: center;
+    gap: 40px;
+
+    padding:20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+
+.project h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: "Pixelify Sans",sans-serif;
+    background-color: #a3bca9;
+}
+
+.project-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project p {
+    margin: 15px 0;
+    color: #3E2C23;
+}
+
+.project img{
+    border: 5px solid #C7B198;
+    width: 250px;
+    height: auto;
+}
+
+.project-link {
+    background: #6D8B74;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.project-text {
+    max-width: 600px;
+}
+
+#contact{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.links a{
+    background: #6D8B74;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#cat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 50px;
+    cursor: pointer;
+}
+
+footer {
+    background: #E9E1C9;
+    color:black;
+    padding: 20px;
+    text-align: center;
+}
