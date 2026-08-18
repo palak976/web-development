@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="styles.css" rel="stylesheet" />
+  <title>Mini Player</title>
+</head>
+<body>
+  <main>
+    <div id="cover-image">
+        <img alt ="cover_photo.jpg" src="../mini-player/image/cover_image.jpg">
+    </div>
+    <div id="song-name"></div>
+
+    <div id="artist-name">
+        <p>Artist Name</p>
+    </div>
+
+    <div id="progress-container">
+        <input type="range" id="progress-bar" min="0" value="0">
+    </div>
+
+    <div id="time-duration">
+        <span id="current-time">0:00</span>
+        <span id="duration">3:59</span>
+    </div>
+    
+    <div id="control">
+        <button id="previous-song">⏮</button>
+        <button id="play-button">▶</button>
+        <button id="next-song">⏭</button>
+    </div>
+
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
