@@ -1,0 +1,256 @@
+
+/* Basic page setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F3EC;
+    color: #34483B;
+    line-height: 1.6;
+}
+
+/* Navigation bar */
+header {
+    background-color: #F5F3EC;
+    border-bottom: 1px solid #DCE5D5;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+}
+
+nav h2, footer h3 {
+    font-size: 25px;
+}
+
+nav h2 span, footer h3 span {
+    color: #829779;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #34483B;
+    margin-left: 22px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #829779;
+}
+
+/* Welcome section */
+.hero {
+    text-align: center;
+    padding: 75px 20px;
+    background-color: #F5F3EC;
+}
+
+.tagline {
+    color: #829779;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 46px;
+    line-height: 1.25;
+    margin-bottom: 18px;
+}
+
+.hero h1 span {
+    color: #829779;
+    font-style: italic;
+}
+
+.description {
+    max-width: 550px;
+    margin: 0 auto 25px;
+    color: #6C766A;
+}
+
+/* Search form */
+#search-form {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 7px;
+    background-color: white;
+    border: 1px solid #DCE5D5;
+    border-radius: 10px;
+}
+
+#search-input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#search-form button {
+    background-color: #34483B;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding: 12px 20px;
+}
+
+#search-form button:hover {
+    background-color: #526B57;
+}
+
+#search-message {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #526B57;
+}
+
+/* Subject and catalogue sections */
+.content {
+    padding: 45px 8%;
+}
+
+.content h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.subject-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.subject-btn {
+    background-color: #E3E9DC;
+    color: #34483B;
+    border: 1px solid #D3DDCB;
+    border-radius: 8px;
+    padding: 12px 18px;
+}
+
+.subject-btn:hover {
+    background-color: #D0DDC7;
+}
+
+.section-description {
+    color: #6C766A;
+    margin-bottom: 22px;
+}
+
+/* Book cards */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    border: 1px solid #E1E5DA;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.book-card h3 {
+    font-family: Georgia, serif;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.book-card p {
+    color: #6C766A;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.book-subject {
+    color: #829779 !important;
+    font-weight: bold;
+    font-size: 12px !important;
+    text-transform: uppercase;
+}
+
+.availability {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 5px 9px;
+    border-radius: 5px;
+    background-color: #E3E9DC;
+    color: #34483B;
+    font-size: 12px;
+}
+
+.no-results {
+    color: #6C766A;
+    grid-column: 1 / -1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #E9EAE1;
+    padding: 28px;
+    margin-top: 30px;
+}
+
+footer p {
+    color: #6C766A;
+    font-size: 14px;
+}
+
+/* Mobile screens */
+@media (max-width: 650px) {
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0 7px;
+    }
+
+    .hero {
+        padding: 50px 18px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    #search-form {
+        flex-wrap: wrap;
+    }
+
+    #search-input {
+        width: 100%;
+    }
+
+    #search-form button {
+        width: 100%;
+    }
+
+    .content {
+        padding: 35px 18px;
+    }
+
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}

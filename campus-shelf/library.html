@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusShelf | College Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h2>Campus<span>Shelf</span></h2>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#subjects">Subjects</a>
+                <a href="#catalog">Catalogue</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <p class="tagline">YOUR COLLEGE REFERENCE LIBRARY</p>
+
+            <h1>Your next great discovery<br>
+                <span>starts here.</span>
+            </h1>
+
+            <p class="description">
+                Find reference books for your subjects, check their
+                availability, and discover where they are located.
+            </p>
+
+            <form id="search-form">
+                <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Search books, authors or subjects..."
+                >
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="search-message"></p>
+        </section>
+
+        <section id="subjects" class="content">
+            <p class="tagline">EXPLORE YOUR COURSE</p>
+            <h2>Browse by subject</h2>
+
+            <div class="subject-list">
+                <button class="subject-btn" data-subject="DSA">
+                    Data Structures
+                </button>
+
+                <button class="subject-btn" data-subject="DBMS">
+                    DBMS
+                </button>
+
+                <button class="subject-btn" data-subject="Operating Systems">
+                    Operating Systems
+                </button>
+
+                <button class="subject-btn" data-subject="Mathematics">
+                    Mathematics
+                </button>
+            </div>
+        </section>
+
+        <section id="catalog" class="content">
+            <p class="tagline">THE COLLECTION</p>
+            <h2>Reference books</h2>
+
+            <p class="section-description">
+                Explore books available in your college library.
+                These sample listings will later come from our database.
+            </p>
+
+            <div id="book-list" class="book-list"></div>
+        </section>
+    </main>
+
+    <footer>
+        <h3>Campus<span>Shelf</span></h3>
+        <p>Making knowledge easier to find.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
