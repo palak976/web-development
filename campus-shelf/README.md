@@ -17,13 +17,13 @@ Built With
 - JavaScript
 
 Project Structure
-
+``` text
 CampusShelf/
 ├── index.html
 ├── styles.css
 ├── script.js
 └── README.md
-
+```
 Getting Started
 
 1. Clone this repository:
